@@ -1,0 +1,48 @@
+// Query 1: How many gameweeks were played?
+
+MATCH (g:Gameweek)
+RETURN COUNT(g) AS total_gameweeks;
+
+
+
+
+// Query 2: How many player nodes exist?
+
+// (Players differ by name + element)
+MATCH (p:Player)
+RETURN COUNT(p) AS total_players;
+
+
+
+
+
+// Query 3: Teams in 2021-22 but NOT 2022-23
+
+MATCH (t:Team)<-[:HAS_HOME_TEAM|:HAS_AWAY_TEAM]-(f:Fixture {season:"2021-22"})
+WITH DISTINCT t.name AS team
+WHERE NOT EXISTS {
+    MATCH (:Fixture {season:"2022-23"})-[:HAS_HOME_TEAM|:HAS_AWAY_TEAM]->(:Team {name:team})
+}
+RETURN team;
+
+
+
+
+// Query 4: Biggest total_points in 2022-23
+
+MATCH (p:Player)-[pl:PLAYED_IN]->(f:Fixture {season:"2022-23"})
+RETURN p.player_name AS player, pl.total_points AS points
+ORDER BY points DESC
+LIMIT 1;
+
+
+
+
+// Query 5: How many matches did Elneny play?
+
+MATCH (p:Player)-[o:PLAYED_IN]->(f:Fixture)
+WHERE p.player_name CONTAINS "Elneny" AND o.minutes > 0
+RETURN COUNT(f) AS matches_played;
+
+
+

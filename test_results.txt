@@ -1,0 +1,400 @@
+Q1: How many total points did Mohamed Salah get in the 2021-22 season?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Mohamed Dräger', 'Mohamed Elneny', 'Mohamed Elyounoussi', 'Mohamed Naser El Sayed Elneny', 'Mohamed Salah', "Salah-Eddine Oulad M'hand"], 'team': [], 'position': [], 'season': '2021-22', 'gameweek': None, 'metric': ['points']}
+--------------------------------------------------
+Q2: Compare Erling Haaland and Harry Kane based on goals scored.
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Ainsley Maitland-Niles', 'Alejandro Garnacho', 'Aleksandar Mitrović', 'Alexander Isak', 'Alexandre Lacazette', 'Harry Kane', 'Erling Haaland', 'Harry Arter', 'Harry Lewis', 'Harry Maguire', 'Harry Souttar'], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': ['goals']}
+--------------------------------------------------
+Q3: Who are the best defenders from Newcastle this season?
+   ➤ Intent:   RECOMMENDATION
+   ➤ Entities: {'player': ['André Tavares Gomes', 'Cédric Alves Soares', 'Cédric Soares', 'Fabio Henrique Tavares', 'Jan Bednarek'], 'team': ['Newcastle'], 'position': [], 'season': None, 'gameweek': None, 'metric': ['best']}
+--------------------------------------------------
+Q4: What team does Ollie Watkins play for?
+   ➤ Intent:   COMPARE_PLAYERS
+   ➤ Entities: {'player': ['Ollie Watkins'], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q5: Did Kieran Trippier keep a clean sheet in Gameweek 12 of 2022-23?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Kieran Dowell', 'Kieran Tierney', 'Kieran Trippier'], 'team': [], 'position': [], 'season': '2022-23', 'gameweek': 12, 'metric': []}
+--------------------------------------------------
+Q6: Show me the minutes played for Bukayo Saka in GW 3.
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Bukayo Saka'], 'team': [], 'position': [], 'season': None, 'gameweek': 3, 'metric': ['minutes']}
+--------------------------------------------------
+Q7: I need a recommendation for a midfielder from Man City.
+   ➤ Intent:   RECOMMENDATION
+   ➤ Entities: {'player': [], 'team': ['Man City', 'Man Utd'], 'position': ['Midfielder'], 'season': None, 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q8: Who has a higher ICT index, Kevin De Bruyne or Bruno Fernandes?
+   ➤ Intent:   COMPARE_PLAYERS
+   ➤ Entities: {'player': ['Bruno André Cavaco Jordão', 'Bruno Borges Fernandes', 'Bruno Guimarães Rodriguez Moura', 'Bruno Miguel Borges Fernandes', 'Alfie Devine', 'Dean Henderson', 'Declan Rice', 'Dejan Kulusevski', 'Dele Alli', 'Kevin De Bruyne', 'Bernardo Fernandes Da Silva Junior', 'Kevin Long', 'Kevin Mbabu', 'Kevin Schade'], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q9: List all metrics for Marcus Rashford in the 2022-23 season.
+   ➤ Intent:   COMPARE_PLAYERS
+   ➤ Entities: {'player': ['Marcus Bettinelli', 'Marcus Forss', 'Marcus Oliveira Alencar', 'Marcus Rashford', 'Marcus Tavernier', 'Adam Lallana', 'Amad Diallo', 'Callum Hudson-Odoi', 'Callum Wilson', 'Conor Gallagher'], 'team': [], 'position': [], 'season': '2022-23', 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q10: Is Mohamed Salah considered a midfielder or a forward?
+   ➤ Intent:   COMPARE_PLAYERS
+   ➤ Entities: {'player': ['Mohamed Dräger', 'Mohamed Elneny', 'Mohamed Elyounoussi', 'Mohamed Naser El Sayed Elneny', 'Mohamed Salah', "Salah-Eddine Oulad M'hand"], 'team': [], 'position': ['Midfielder', 'Forward'], 'season': None, 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q11: Which Arsenal players had the highest threat in GW 38?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Kevin Schade'], 'team': ['Arsenal'], 'position': [], 'season': None, 'gameweek': 38, 'metric': []}
+--------------------------------------------------
+Q12: How many red cards did Bruno Fernandes receive in 2021-22?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Bruno André Cavaco Jordão', 'Bruno Borges Fernandes', 'Bruno Guimarães Rodriguez Moura', 'Bruno Miguel Borges Fernandes', 'Bernardo Fernandes Da Silva Junior'], 'team': [], 'position': [], 'season': '2021-22', 'gameweek': None, 'metric': ['red cards']}
+--------------------------------------------------
+Q13: Give me the assist stats for Harry Kane vs Ollie Watkins.
+   ➤ Intent:   COMPARE_PLAYERS
+   ➤ Entities: {'player': ['Harry Arter', 'Harry Kane', 'Harry Lewis', 'Harry Maguire', 'Harry Souttar', 'Ollie Watkins'], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q14: Recommend a forward who costs less than Haaland but has high influence.
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Ethan Ampadu', 'Ethan Nwaneri', 'Ethan Pinnock', 'Ethan Wady', 'Jonathan Castro Otto', 'Erling Haaland'], 'team': [], 'position': ['Forward'], 'season': None, 'gameweek': None, 'metric': ['cost']}
+--------------------------------------------------
+Q15: Did Man City keep a clean sheet in Gameweek 15?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': [], 'team': ['Man City', 'Man Utd'], 'position': [], 'season': None, 'gameweek': 15, 'metric': []}
+--------------------------------------------------
+Q16: check haaland stats gw 1
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': [], 'team': [], 'position': [], 'season': None, 'gameweek': 1, 'metric': []}
+--------------------------------------------------
+Q17: Who is the best captain option from Liverpool for the upcoming week?
+   ➤ Intent:   RECOMMENDATION
+   ➤ Entities: {'player': [], 'team': ['Liverpool'], 'position': [], 'season': None, 'gameweek': None, 'metric': ['best']}
+--------------------------------------------------
+Q18: What is the creativity score for Kevin De Bruyne?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Kevin De Bruyne', 'Kevin Long', 'Kevin Mbabu', 'Kevin Schade', 'Alfie Devine', 'Dean Henderson', 'Declan Rice', 'Dejan Kulusevski', 'Dele Alli'], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q19: Compare the total points of Saka and Rashford for the 2022-23 season.
+   ➤ Intent:   COMPARE_PLAYERS
+   ➤ Entities: {'player': ['Ainsley Maitland-Niles', 'Alejandro Garnacho', 'Aleksandar Mitrović', 'Alexander Isak', 'Alexandre Lacazette', 'Bukayo Saka', 'Marcus Rashford'], 'team': [], 'position': [], 'season': '2022-23', 'gameweek': None, 'metric': ['points']}
+--------------------------------------------------
+Q20: In which gameweek did Mohamed Salah score the most goals?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Mohamed Dräger', 'Mohamed Elneny', 'Mohamed Elyounoussi', 'Mohamed Naser El Sayed Elneny', 'Mohamed Salah', "Salah-Eddine Oulad M'hand"], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': ['goals']}
+--------------------------------------------------
+Q21: Find me a differential player from Aston Villa.
+   ➤ Intent:   FIXTURE_QUERY
+   ➤ Entities: {'player': [], 'team': ['Aston Villa'], 'position': [], 'season': None, 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q22: Did Kieran Trippier get any yellow cards in GW 5 of 2022-23?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Kieran Dowell', 'Kieran Tierney', 'Kieran Trippier', 'Wanya Marçal-Madivadua'], 'team': [], 'position': [], 'season': '2022-23', 'gameweek': 5, 'metric': ['yellow cards']}
+--------------------------------------------------
+Q23: Who is better on assists, De Bruyne or Salah?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Kevin De Bruyne', 'Alfie Devine', 'Dean Henderson', 'Declan Rice', 'Dejan Kulusevski', 'Dele Alli', 'Mohamed Salah', "Salah-Eddine Oulad M'hand"], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': ['assists']}
+--------------------------------------------------
+Q24: Tell me about Ollie Watkins' recent form.
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Ollie Watkins'], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q25: How many minutes did Erling Haaland play in Gameweek 30?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Erling Haaland'], 'team': [], 'position': [], 'season': None, 'gameweek': 30, 'metric': ['minutes']}
+--------------------------------------------------
+Q26: Top 3 defenders based on clean sheets in 2021-22.
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': [], 'team': [], 'position': [], 'season': '2021-22', 'gameweek': None, 'metric': ['clean sheets', 'top']}
+--------------------------------------------------
+Q27: Is Kieran Trippier a good buy for GW 20?
+   ➤ Intent:   RECOMMENDATION
+   ➤ Entities: {'player': ['Kieran Dowell', 'Kieran Tierney', 'Kieran Trippier'], 'team': [], 'position': [], 'season': None, 'gameweek': 20, 'metric': []}
+--------------------------------------------------
+Q28: What are the fixtures for Spurs in GW 10?
+   ➤ Intent:   COMPARE_PLAYERS
+   ➤ Entities: {'player': ['André Tavares Gomes', 'Cédric Alves Soares', 'Cédric Soares', 'Fabio Henrique Tavares', 'Jan Bednarek'], 'team': ['Spurs'], 'position': [], 'season': None, 'gameweek': 10, 'metric': []}
+--------------------------------------------------
+Q29: Compare the influence stats of Bruno Fernandes and Kevin De Bruyne.
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Kevin De Bruyne', 'Bruno André Cavaco Jordão', 'Bruno Borges Fernandes', 'Bruno Guimarães Rodriguez Moura', 'Bruno Miguel Borges Fernandes', 'Ainsley Maitland-Niles', 'Alejandro Garnacho', 'Aleksandar Mitrović', 'Alexander Isak', 'Alexandre Lacazette', 'Bernardo Fernandes Da Silva Junior', 'Kevin Long', 'Kevin Mbabu', 'Kevin Schade', 'Alfie Devine', 'Dean Henderson', 'Declan Rice', 'Dejan Kulusevski', 'Dele Alli'], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q30: Did Harry Kane score in Gameweek 38 of 2021-22?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Harry Arter', 'Harry Kane', 'Harry Lewis', 'Harry Maguire', 'Harry Souttar'], 'team': [], 'position': [], 'season': '2021-22', 'gameweek': 38, 'metric': []}
+--------------------------------------------------
+Q31: Who has more total points, Watkins or Rashford?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Ollie Watkins', 'Marcus Rashford'], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': ['points']}
+--------------------------------------------------
+Q32: Suggest a replacement for Mohamed Salah.
+   ➤ Intent:   RECOMMENDATION
+   ➤ Entities: {'player': ['Mohamed Dräger', 'Mohamed Elneny', 'Mohamed Elyounoussi', 'Mohamed Naser El Sayed Elneny', 'Mohamed Salah', "Salah-Eddine Oulad M'hand"], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q33: What is Bukayo Saka's position?
+   ➤ Intent:   GENERAL_INFO
+   ➤ Entities: {'player': ['Bukayo Saka'], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q34: Show me the ICT index trend for Marcus Rashford.
+   ➤ Intent:   COMPARE_PLAYERS
+   ➤ Entities: {'player': ['Marcus Bettinelli', 'Marcus Forss', 'Marcus Oliveira Alencar', 'Marcus Rashford', 'Marcus Tavernier'], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q35: How many goals did Man Utd score in GW 4?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': [], 'team': ['Man City', 'Man Utd'], 'position': [], 'season': None, 'gameweek': 4, 'metric': ['goals']}
+--------------------------------------------------
+Q36: best budget midfielders 2022-23
+   ➤ Intent:   RECOMMENDATION
+   ➤ Entities: {'player': [], 'team': [], 'position': [], 'season': '2022-23', 'gameweek': None, 'metric': ['best']}
+--------------------------------------------------
+Q37: Compare the minutes played between Haaland and Kane.
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Harry Kane', 'Erling Haaland', 'Ainsley Maitland-Niles', 'Alejandro Garnacho', 'Aleksandar Mitrović', 'Alexander Isak', 'Alexandre Lacazette'], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': ['minutes']}
+--------------------------------------------------
+Q38: Did Bruno Fernandes get an assist in GW 1?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Bruno André Cavaco Jordão', 'Bruno Borges Fernandes', 'Bruno Guimarães Rodriguez Moura', 'Bruno Miguel Borges Fernandes', 'Bernardo Fernandes Da Silva Junior'], 'team': [], 'position': [], 'season': None, 'gameweek': 1, 'metric': []}
+--------------------------------------------------
+Q39: Who took the most penalties for Man City in 2022-23?
+   ➤ Intent:   RECOMMENDATION
+   ➤ Entities: {'player': [], 'team': ['Man City', 'Man Utd'], 'position': [], 'season': '2022-23', 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q40: Give me the total points for Kieran Trippier in the 2021-22 season.
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Kieran Trippier', 'Kieran Dowell', 'Kieran Tierney'], 'team': [], 'position': [], 'season': '2021-22', 'gameweek': None, 'metric': ['points']}
+--------------------------------------------------
+Q41: Which Spurs player had the highest creativity in GW 9?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Kevin Schade'], 'team': ['Spurs'], 'position': [], 'season': None, 'gameweek': 9, 'metric': []}
+--------------------------------------------------
+Q42: Should I bench Ollie Watkins for GW 22?
+   ➤ Intent:   COMPARE_PLAYERS
+   ➤ Entities: {'player': ['Ollie Watkins'], 'team': [], 'position': [], 'season': None, 'gameweek': 22, 'metric': []}
+--------------------------------------------------
+Q43: How many clean sheets did Chelsea get in 2021-22?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': [], 'team': ['Chelsea'], 'position': [], 'season': '2021-22', 'gameweek': None, 'metric': ['clean sheets']}
+--------------------------------------------------
+Q44: Compare Salah vs Saka on threat metrics.
+   ➤ Intent:   COMPARE_PLAYERS
+   ➤ Entities: {'player': ['Bukayo Saka', 'Mohamed Salah', "Salah-Eddine Oulad M'hand"], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q45: Who is the highest scoring player for Arsenal?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': [], 'team': ['Arsenal'], 'position': [], 'season': None, 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q46: What were Erling Haaland's stats in GW 15 of 2022-23?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Erling Haaland'], 'team': [], 'position': [], 'season': '2022-23', 'gameweek': 15, 'metric': []}
+--------------------------------------------------
+Q47: Recommend a defender from Newcastle with high assist potential.
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': [], 'team': ['Newcastle'], 'position': ['Defender'], 'season': None, 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q48: Did Kevin De Bruyne play in Gameweek 14?
+   ➤ Intent:   FIXTURE_QUERY
+   ➤ Entities: {'player': ['Kevin De Bruyne', 'Kevin Long', 'Kevin Mbabu', 'Kevin Schade', 'Alfie Devine', 'Dean Henderson', 'Declan Rice', 'Dejan Kulusevski', 'Dele Alli'], 'team': [], 'position': [], 'season': None, 'gameweek': 14, 'metric': []}
+--------------------------------------------------
+Q49: Show me the yellow cards count for Marcus Rashford.
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Marcus Bettinelli', 'Marcus Forss', 'Marcus Oliveira Alencar', 'Marcus Rashford', 'Marcus Tavernier'], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': ['yellow cards']}
+--------------------------------------------------
+Q50: Who is better value, Trippier or a Man City defender?
+   ➤ Intent:   RECOMMENDATION
+   ➤ Entities: {'player': ['Kieran Trippier'], 'team': ['Man City', 'Man Utd'], 'position': ['Defender'], 'season': None, 'gameweek': None, 'metric': ['value']}
+--------------------------------------------------
+Q51: What team does Harry Kane play for in 2022-23?
+   ➤ Intent:   COMPARE_PLAYERS
+   ➤ Entities: {'player': ['Harry Arter', 'Harry Kane', 'Harry Lewis', 'Harry Maguire', 'Harry Souttar'], 'team': [], 'position': [], 'season': '2022-23', 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q52: details on bruno fernandes gw 3 2021-22
+   ➤ Intent:   GENERAL_INFO
+   ➤ Entities: {'player': ['Steven Bergwijn'], 'team': [], 'position': [], 'season': '2021-22', 'gameweek': 3, 'metric': []}
+--------------------------------------------------
+Q53: Who had the most bonus points in GW 25?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Kevin Schade'], 'team': [], 'position': [], 'season': None, 'gameweek': 25, 'metric': ['points', 'bonus']}
+--------------------------------------------------
+Q54: Compare the clean sheets of Newcastle and Man City defenders. 
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Ainsley Maitland-Niles', 'Alejandro Garnacho', 'Aleksandar Mitrović', 'Alexander Isak', 'Alexandre Lacazette'], 'team': ['Man City', 'Newcastle', 'Man Utd'], 'position': [], 'season': None, 'gameweek': None, 'metric': ['clean sheets']}
+--------------------------------------------------
+Q55: How many goals did Ollie Watkins score against Liverpool?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Ollie Watkins'], 'team': ['Liverpool'], 'position': [], 'season': None, 'gameweek': None, 'metric': ['goals']}
+--------------------------------------------------
+Q56: Is Bukayo Saka on penalties?
+   ➤ Intent:   GENERAL_INFO
+   ➤ Entities: {'player': ['Bukayo Saka'], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q57: Who has a higher xG, Haaland or Kane?
+   ➤ Intent:   COMPARE_PLAYERS
+   ➤ Entities: {'player': ['Harry Kane', 'Erling Haaland'], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q58: Suggest a captain from Man Utd for GW 16.
+   ➤ Intent:   RECOMMENDATION
+   ➤ Entities: {'player': [], 'team': ['Man City', 'Man Utd'], 'position': [], 'season': None, 'gameweek': 16, 'metric': []}
+--------------------------------------------------
+Q59: What is the price of Mohamed Salah?
+   ➤ Intent:   GENERAL_INFO
+   ➤ Entities: {'player': ['Mohamed Dräger', 'Mohamed Elneny', 'Mohamed Elyounoussi', 'Mohamed Naser El Sayed Elneny', 'Mohamed Salah', "Salah-Eddine Oulad M'hand"], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': ['price']}
+--------------------------------------------------
+Q60: Did Kieran Trippier assist in Gameweek 2 of 2022-23?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Kieran Dowell', 'Kieran Tierney', 'Kieran Trippier'], 'team': [], 'position': [], 'season': '2022-23', 'gameweek': 2, 'metric': []}
+--------------------------------------------------
+Q61: Compare the creativity of De Bruyne and Saka.
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Kevin De Bruyne', 'Ainsley Maitland-Niles', 'Alejandro Garnacho', 'Aleksandar Mitrović', 'Alexander Isak', 'Alexandre Lacazette', 'Bukayo Saka', 'Alfie Devine', 'Dean Henderson', 'Declan Rice', 'Dejan Kulusevski', 'Dele Alli'], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q62: How many minutes did Rashford play in the last 5 gameweeks of 2021-22?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Marcus Rashford'], 'team': [], 'position': [], 'season': '2021-22', 'gameweek': None, 'metric': ['minutes']}
+--------------------------------------------------
+Q63: Who are the top 5 players by total points in 2022-23?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['André Tavares Gomes', 'Cédric Alves Soares', 'Cédric Soares', 'Fabio Henrique Tavares', 'Jan Bednarek'], 'team': [], 'position': [], 'season': '2022-23', 'gameweek': None, 'metric': ['points', 'top']}
+--------------------------------------------------
+Q64: Did Erling Haaland get a red card in 2022-23?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Freddie Woodman', 'Frederik Alves', 'Ryan Fredericks', 'Wilfred Ndidi', 'Erling Haaland', 'Ricardo Barbosa Pereira', 'Ricardo Domingos Barbosa Pereira'], 'team': [], 'position': [], 'season': '2022-23', 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q65: Recommend a Chelsea player with good upcoming fixtures.
+   ➤ Intent:   FIXTURE_QUERY
+   ➤ Entities: {'player': [], 'team': ['Chelsea'], 'position': [], 'season': None, 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q66: What is the ICT index for Ollie Watkins?
+   ➤ Intent:   COMPARE_PLAYERS
+   ➤ Entities: {'player': ['Ollie Watkins'], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q67: goals scored by saka gw 10-20
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Aaron Wan-Bissaka', 'Steven Bergwijn'], 'team': [], 'position': [], 'season': None, 'gameweek': 10, 'metric': ['goals']}
+--------------------------------------------------
+Q68: Who is the best budget enabler from Aston Villa?
+   ➤ Intent:   RECOMMENDATION
+   ➤ Entities: {'player': [], 'team': ['Aston Villa'], 'position': [], 'season': None, 'gameweek': None, 'metric': ['best']}
+--------------------------------------------------
+Q69: Compare the heatmaps of Salah and Rashford.
+   ➤ Intent:   COMPARE_PLAYERS
+   ➤ Entities: {'player': ['Ainsley Maitland-Niles', 'Alejandro Garnacho', 'Aleksandar Mitrović', 'Alexander Isak', 'Alexandre Lacazette', 'Marcus Rashford', 'Mohamed Salah', "Salah-Eddine Oulad M'hand"], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q70: Did Spurs keep a clean sheet in GW 28?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': [], 'team': ['Spurs'], 'position': [], 'season': None, 'gameweek': 28, 'metric': []}
+--------------------------------------------------
+Q71: How many assists did Kevin De Bruyne provide in 2021-22?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Kevin De Bruyne', 'Kevin Long', 'Kevin Mbabu', 'Kevin Schade', 'Alfie Devine', 'Dean Henderson', 'Declan Rice', 'Dejan Kulusevski', 'Dele Alli'], 'team': [], 'position': [], 'season': '2021-22', 'gameweek': None, 'metric': ['assists']}
+--------------------------------------------------
+Q72: Is Harry Kane fit for Gameweek 32?
+   ➤ Intent:   COMPARE_PLAYERS
+   ➤ Entities: {'player': ['Harry Arter', 'Harry Kane', 'Harry Lewis', 'Harry Maguire', 'Harry Souttar', 'Harvey Griffiths'], 'team': [], 'position': [], 'season': None, 'gameweek': 32, 'metric': []}
+--------------------------------------------------
+Q73: Who scored more points in GW 1, Haaland or Salah?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Mohamed Salah', "Salah-Eddine Oulad M'hand", 'Erling Haaland'], 'team': [], 'position': [], 'season': None, 'gameweek': 1, 'metric': ['points']}
+--------------------------------------------------
+Q74: What position does Bruno Fernandes play?
+   ➤ Intent:   FIXTURE_QUERY
+   ➤ Entities: {'player': ['Bruno André Cavaco Jordão', 'Bruno Borges Fernandes', 'Bruno Guimarães Rodriguez Moura', 'Bruno Miguel Borges Fernandes', 'Bernardo Fernandes Da Silva Junior'], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q75: Give me the stats for the highest scoring defender in 2022-23.
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': [], 'team': [], 'position': ['Defender'], 'season': '2022-23', 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q76: Trippier vs Watkins total points comparison.
+   ➤ Intent:   COMPARE_PLAYERS
+   ➤ Entities: {'player': ['Kieran Trippier', 'Ollie Watkins'], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': ['points']}
+--------------------------------------------------
+Q77: How many goals did Arsenal concede in GW 5?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': [], 'team': ['Arsenal'], 'position': [], 'season': None, 'gameweek': 5, 'metric': ['goals']}
+--------------------------------------------------
+Q78: Who is the most transferred in player for GW 12?
+   ➤ Intent:   RECOMMENDATION
+   ➤ Entities: {'player': [], 'team': [], 'position': [], 'season': None, 'gameweek': 12, 'metric': []}
+--------------------------------------------------
+Q79: Did Marcus Rashford score in Gameweek 7 of 2022-23?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Marcus Bettinelli', 'Marcus Forss', 'Marcus Oliveira Alencar', 'Marcus Rashford', 'Marcus Tavernier'], 'team': [], 'position': [], 'season': '2022-23', 'gameweek': 7, 'metric': []}
+--------------------------------------------------
+Q80: Recommend a goalkeeper from Newcastle.
+   ➤ Intent:   RECOMMENDATION
+   ➤ Entities: {'player': [], 'team': ['Newcastle'], 'position': ['Goalkeeper'], 'season': None, 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q81: What is the average minutes played for Erling Haaland?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Erling Haaland'], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': ['minutes']}
+--------------------------------------------------
+Q82: Compare the threat index of Kane and Haaland.
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Ainsley Maitland-Niles', 'Alejandro Garnacho', 'Aleksandar Mitrović', 'Alexander Isak', 'Alexandre Lacazette', 'Harry Kane', 'Erling Haaland'], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q83: Who has more yellow cards, Bruno Fernandes or Kieran Trippier?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Bruno André Cavaco Jordão', 'Bruno Borges Fernandes', 'Bruno Guimarães Rodriguez Moura', 'Bruno Miguel Borges Fernandes', 'Kieran Dowell', 'Kieran Tierney', 'Kieran Trippier', 'Bernardo Fernandes Da Silva Junior'], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': ['yellow cards']}
+--------------------------------------------------
+Q84: How many points did Mohamed Salah get in double gameweeks?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Mohamed Dräger', 'Mohamed Elneny', 'Mohamed Elyounoussi', 'Mohamed Naser El Sayed Elneny', 'Mohamed Salah', "Salah-Eddine Oulad M'hand"], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': ['points']}
+--------------------------------------------------
+Q85: Who are the essential players for the 2022-23 season?
+   ➤ Intent:   RECOMMENDATION
+   ➤ Entities: {'player': ['André Tavares Gomes', 'Cédric Alves Soares', 'Cédric Soares', 'Fabio Henrique Tavares', 'Jan Bednarek'], 'team': [], 'position': [], 'season': '2022-23', 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q86: Did Ollie Watkins start in GW 30?
+   ➤ Intent:   GENERAL_INFO
+   ➤ Entities: {'player': ['Ollie Watkins'], 'team': [], 'position': [], 'season': None, 'gameweek': 30, 'metric': []}
+--------------------------------------------------
+Q87: Compare the clean sheet potential of Man City vs Liverpool.
+   ➤ Intent:   COMPARE_PLAYERS
+   ➤ Entities: {'player': [], 'team': ['Man City', 'Liverpool', 'Man Utd'], 'position': [], 'season': None, 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q88: What is the ownership percentage of Bukayo Saka?
+   ➤ Intent:   GENERAL_INFO
+   ➤ Entities: {'player': ['Bukayo Saka'], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q89: How many goals did Kevin De Bruyne score from outside the box?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Kevin De Bruyne', 'Kevin Long', 'Kevin Mbabu', 'Kevin Schade', 'Alfie Devine', 'Dean Henderson', 'Declan Rice', 'Dejan Kulusevski', 'Dele Alli'], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': ['goals']}
+--------------------------------------------------
+Q90: rashford stats 2021-22 summary
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': [], 'team': [], 'position': [], 'season': '2021-22', 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q91: Who is the best replacement for Harry Kane?
+   ➤ Intent:   RECOMMENDATION
+   ➤ Entities: {'player': ['Harry Arter', 'Harry Kane', 'Harry Lewis', 'Harry Maguire', 'Harry Souttar'], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': ['best']}
+--------------------------------------------------
+Q92: Did Bukayo Saka get any bonus points in GW 33?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Bukayo Saka', 'Wanya Marçal-Madivadua'], 'team': [], 'position': [], 'season': None, 'gameweek': 33, 'metric': ['points', 'bonus']}
+--------------------------------------------------
+Q93: Compare the influence of Salah and De Bruyne in big games.
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Kevin De Bruyne', 'Ainsley Maitland-Niles', 'Alejandro Garnacho', 'Aleksandar Mitrović', 'Alexander Isak', 'Alexandre Lacazette', 'Mohamed Salah', "Salah-Eddine Oulad M'hand", 'Alfie Devine', 'Dean Henderson', 'Declan Rice', 'Dejan Kulusevski', 'Dele Alli'], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': []}
+--------------------------------------------------
+Q94: Which Aston Villa player has the most assists?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': [], 'team': ['Aston Villa'], 'position': [], 'season': None, 'gameweek': None, 'metric': ['assists']}
+--------------------------------------------------
+Q95: How many red cards were shown in Man Utd games in 2022-23?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': [], 'team': ['Man City', 'Man Utd'], 'position': [], 'season': '2022-23', 'gameweek': None, 'metric': ['red cards']}
+--------------------------------------------------
+Q96: Is Erling Haaland essential for GW 1?
+   ➤ Intent:   RECOMMENDATION
+   ➤ Entities: {'player': ['Erling Haaland'], 'team': [], 'position': [], 'season': None, 'gameweek': 1, 'metric': []}
+--------------------------------------------------
+Q97: What is the total points difference between Kane and Haaland?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Harry Kane', 'Erling Haaland', 'Ainsley Maitland-Niles', 'Alejandro Garnacho', 'Aleksandar Mitrović', 'Alexander Isak', 'Alexandre Lacazette'], 'team': [], 'position': [], 'season': None, 'gameweek': None, 'metric': ['points']}
+--------------------------------------------------
+Q98: Recommend a differential captain for GW 38.
+   ➤ Intent:   RECOMMENDATION
+   ➤ Entities: {'player': [], 'team': [], 'position': [], 'season': None, 'gameweek': 38, 'metric': []}
+--------------------------------------------------
+Q99: Did Bruno Fernandes play 90 minutes in GW 2?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': ['Bruno André Cavaco Jordão', 'Bruno Borges Fernandes', 'Bruno Guimarães Rodriguez Moura', 'Bruno Miguel Borges Fernandes', 'Bernardo Fernandes Da Silva Junior'], 'team': [], 'position': [], 'season': None, 'gameweek': 2, 'metric': ['minutes']}
+--------------------------------------------------
+Q100: Who was the highest scoring player in Gameweek 21 of 2022-23?
+   ➤ Intent:   PLAYER_STATS
+   ➤ Entities: {'player': [], 'team': [], 'position': [], 'season': '2022-23', 'gameweek': 21, 'metric': []}
+--------------------------------------------------

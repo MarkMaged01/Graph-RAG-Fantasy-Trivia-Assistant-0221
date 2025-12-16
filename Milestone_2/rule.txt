@@ -1,0 +1,76 @@
+///////////////////////////////////////////////////////////////////////////
+//    Detect players incorrectly assigned the DEF position (SCORING RULE)
+//    Produces:
+//    - player name
+//    - number of incorrect fixtures
+//    - total fixtures played
+//    - details list [ {def_score, season, fixture, matches_def, total_points} ]
+//
+//     
+//     If a player has mistakenly been assigned 2 positions and they are indeed a defender,
+//     they will have 0 not_def_fixtures and fixture_details is empty.
+///////////////////////////////////////////////////////////////////////////
+
+MATCH (p:Player)-[:PLAYS_AS]->(pos:Position)
+WITH p, COLLECT(pos.name) AS positions
+WHERE "DEF" IN positions AND SIZE(positions) > 1
+
+
+OPTIONAL MATCH (p)-[allPl:PLAYED_IN]->(fxAll:Fixture)
+WITH p, positions,
+     SIZE(COLLECT(fxAll)) AS total_fixtures
+
+
+OPTIONAL MATCH (p)-[pl:PLAYED_IN]->(f:Fixture)
+WHERE toUpper(trim(pl.position)) = "DEF"
+
+
+WITH p, total_fixtures, f,
+     pl.total_points AS tp,
+     (
+       CASE WHEN pl.minutes >= 60 THEN 2
+            WHEN pl.minutes > 0 THEN 1
+            ELSE 0
+       END
+       + pl.goals_scored * 6
+       + pl.assists * 3
+       + (CASE WHEN pl.clean_sheets >= 1 
+               AND pl.minutes > 60 
+               THEN 4 ELSE 0 END)
+       - floor(pl.goals_conceded / 2)
+       - (pl.yellow_cards)
+       - 3 * (pl.red_cards)
+       - 2 * (pl.own_goals)
+       - 2 * (pl.penalties_missed)
+       + pl.bonus
+     ) AS def_score
+
+WITH p, total_fixtures, f, tp, def_score,
+     (tp = def_score) AS matches_def
+
+
+WITH p, total_fixtures,
+     COLLECT({
+         season: f.season,
+         fixture_number: f.fixture_number,
+         total_points: tp,
+         def_score: def_score,
+         matches_def: matches_def
+     }) AS def_fixtures
+
+
+WITH p, total_fixtures, def_fixtures,
+     ALL(fx IN def_fixtures WHERE fx.matches_def = true) AS true_defender
+
+RETURN
+    p.player_name AS player,
+
+    CASE WHEN true_defender THEN 0 ELSE SIZE(def_fixtures) END AS not_def_fixtures,
+
+    total_fixtures,
+
+
+    CASE WHEN true_defender THEN [] ELSE def_fixtures END AS fixture_details
+
+ORDER BY not_def_fixtures DESC;
+
